@@ -1,5 +1,3 @@
-
-// coffee types
 exports.types = [
     {name: 'Espresso', price: '$5.99'},
     {name: 'Latte', price: '$4.50'},
@@ -8,10 +6,9 @@ exports.types = [
     {name: 'Macchiato', price: '$3.50'},
 ];
 exports.typesPlain = exports.types.map(function(o: any) {
-    return o.name + ' (' + o.price + ')'; // convert to one line
+    return o.name + ' (' + o.price + ')';
 });
 
-// sugar levels
 exports.sugar = [
     {name: 'Low', spoons: '1'},
     {name: 'Medium', spoons: '2'},
@@ -19,10 +16,9 @@ exports.sugar = [
     {name: 'Very High', spoons: '4'},
 ];
 exports.sugarPlain = exports.sugar.map(function(o: any) {
-    return o.name + ' (' + o.spoons + ' spoons)'; // convert to one line
+    return o.name + ' (' + o.spoons + ' spoons)';
 });
 
-// served in
 exports.servedIn = [
     "Mug",
     "Cup",

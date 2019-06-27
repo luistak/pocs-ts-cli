@@ -1,4 +1,4 @@
-const colors = require('colors');
+const chalk = require('chalk');
 const { types } = require('./values');
 
 // export function to list coffee
@@ -8,6 +8,6 @@ module.exports = function() {
 
     // list on separate lines
     types.forEach((type: any) => {
-        console.log('%s %s', colors.bold(type.name), colors.grey('/ '+ type.price));
+        console.log('%s %s', chalk.bold(type.name), chalk.grey('/ '+ type.price));
     });
 };
